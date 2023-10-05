@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .button {
+            background-color: skyblue;
+        }
+
+        body {
+            background-color: #E2E4E9;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        #section,
+        #year {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #fff;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="mee.jpg">
+    <h2>Enter your selection</h2>
+    <form id="selectionForm" action="#" method="post">
+        <select id="year" name="year">
+            <option value="" selected disabled>Select the year</option>
+            <option value="1st-year">1st Year</option>
+            <option value="2nd-year">2nd Year</option>
+            <option value="3rd-year">3rd Year</option>
+            <option value="4th-year">4th Year</option>
+        </select>
+
+        <select id="section" name="section">
+          		       <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-A.html">2-CSE-A</option>
+                               <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-B.html">2-CSE-B</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-C.html">2-CSE-C</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-D.html">2-CSE-D</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-E.html">2-CSE-E</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-F.html">2-CSE-F</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-G.html">2-CSE-G</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-H.html">2-CSE-H</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-I.html">2-CSE-I</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-J.html">2-CSE-J</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-K.html">2-CSE-K</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-L.html">2-CSE-L</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-M.html">2-CSE-M</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-N.html">2-CSE-N</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2-CSE-O.html">2-CSE-O</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-A-1.html">2-AIML-A</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-B.html">2-AIML-B</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-C.html">2-AIML-C</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-D.html">2-AIML-D</option>
+                                <option value="http://sru.42web.io/wp-content/uploads/2023/08/2-CSE-DSCS.html">2-DS&CS</option>
+            
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("selectionForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the default form submission behavior
+            var selectedYear = document.getElementById("year").value;
+            var selectedSection = document.getElementById("section").value;
+
+            if (selectedSection !== "") {
+                window.open(selectedSection, "_blank");
+            }
+        });
+    </script>
+</body>
+
+</html>

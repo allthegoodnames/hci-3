@@ -1,0 +1,93 @@
+<html>
+<head>
+    <style>
+        body 
+	{
+ 	    background-color: #0B1D36;
+            background-image: url('srr.jpg');
+            background-position:left top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family:,copperplate papyrus ,lucida console,;
+            margin: 0;
+            padding: 0;
+	    display:flex;
+	    justify-content:center;
+            align-items:center;
+       }
+	h1{
+		font-size:40px;
+	}
+        form 
+	{
+            background-color: rgba(255, 255, 255, 0.7);
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        fieldset 
+	{
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        legend 
+	{
+            font-weight: bold;
+        }
+        label 
+	{
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="radio"] 
+	{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] 
+	{
+            width: auto;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] 
+	{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover 
+	{
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+	
+	<h1 style="color:yellow;">ACADEMICS & ADMINISTRATION PORTAL<br></h1>
+    <form action="submit1.html" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Student email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Password:</label>
+            <input type="password" id="passs" name="passs" required><br><br>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
